@@ -3,37 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>EcoLaguna</title>
-
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
-
 <body>
 
     <header>
         <div class="logo">
-            🌎
-            <span>EcoLaguna</span>
+            <span>🌎</span> EcoLaguna
         </div>
-
-        <p>Pequeñas acciones, grandes cambios 🌱</p>
+        <p>Las capas de reciclaje, puntos limpios y basureros.</p>
     </header>
 
     <main>
-
         <aside>
-
-            <h2>🌿 Capas del mapa</h2>
-
-            <label>
-                <input type="checkbox" id="reciclaje" checked>
-                ♻️ Puntos de reciclaje
-            </label>
-
             <label>
                 <input type="checkbox" id="limpios" checked>
                 🔵 Puntos limpios
@@ -53,49 +39,20 @@
             </div>
 
             <div class="mensaje">
-                🌱 <b>¡Juntos cuidamos Laguna Grande!</b>
+                <b>¡Juntos cuidamos Laguna Chica!</b>
             </div>
-
         </aside>
 
         <section id="map"></section>
-
-<div class="panel-ruta">
-
-    <div class="ruta-titulo">
-      ¿Cómo llegar?
-    </div>
-
-    <div class="ruta-subtitulo">
-        Desde la entrada de la laguna chica
-    </div>
-
-    <div class="paso">
-        <span>1</span>
-        Dirígete desde la entrada hacia el sector del parque.
-    </div>
-
-    <div class="paso">
-        <span>2</span>
-        Sigue la señalización hacia el sector del Anfiteatro.
-    </div>
-
-    <div class="paso">
-        <span>3</span>
-        En el sector del Anfiteatro encontrarás el punto limpio.
-    </div>
-
-    <button onclick="mostrarRuta()">
-        📍 Ver referencia en el mapa
-    </button>
-
-</div>
-
-</main>
     </main>
 
+    <div class="panel-ruta">
+        <div class="ruta-titulo">📍 ¿Cómo llegar?</div>
+        <p>Desde la entrada de la Laguna Chica hacia el sector seleccionado.</p>
+    </div>
+
+    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
